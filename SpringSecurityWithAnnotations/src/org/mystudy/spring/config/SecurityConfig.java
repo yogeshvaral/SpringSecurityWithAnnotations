@@ -34,6 +34,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.rememberMe().rememberMeParameter("remember-me")
 		.tokenValiditySeconds(50000).key("anyKey").tokenRepository(tokenRepository());
 		http.exceptionHandling().accessDeniedPage("/403");
+		http.logout().logoutUrl("/").logoutUrl("/")
+		.invalidateHttpSession(true);
 	}
 
 	private PersistentTokenRepository tokenRepository() {
