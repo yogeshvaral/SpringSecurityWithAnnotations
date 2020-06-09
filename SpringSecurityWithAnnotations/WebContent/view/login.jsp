@@ -28,6 +28,10 @@
           <label for="password" class="sr-only">Password</label>
           <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
         </p>
+          <p>
+          <label for="remember-me" class="sr-only">Remember-me</label>
+          <input type="checkbox" id="remember-me" name="remember-me" class="form-control" placeholder="Remember-me" checked="checked">
+        </p>
 <input name="_csrf" type="hidden" name="${_csrf.parameterName} }" value="${_csrf.token}" />
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>

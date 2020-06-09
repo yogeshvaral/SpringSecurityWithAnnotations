@@ -27,4 +27,11 @@ public class AppController {
 		ModelAndView model = new ModelAndView("login");
 		return model;
 	}
+	
+	@RequestMapping("/403")
+	public ModelAndView Status403() {
+		ModelAndView model = new ModelAndView("403");
+		return model;
+	}
+
 }
