@@ -15,8 +15,11 @@
   Custom Login Form
   </hr>
      <div class="container">
-      <form class="form-signin" method="post" action="/SpringSecurityWithAnnotations/login">
+      <form class="form-signin" method="post" action="${loginUrl} ">
         <h2 class="form-signin-heading">Please sign in</h2>
+        <c:if test="${param.error!=null} }">
+        <span style="colour=red">Invalid Credentials</span>
+        </c:if>
         <p>
           <label for="username" class="sr-only">Username</label>
           <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>

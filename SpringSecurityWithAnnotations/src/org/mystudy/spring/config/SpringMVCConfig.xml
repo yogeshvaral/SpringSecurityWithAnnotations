@@ -10,6 +10,7 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 
    <context:component-scan base-package="org.mystudy.spring" />
+    <context:component-scan base-package="org.mystudy.spring.config" />
   
    
    <!-- Configure View Resolver -->
