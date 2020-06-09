@@ -22,4 +22,9 @@ public class AppController {
 		ModelAndView model = new ModelAndView("user");
 		return model;
 	}
+	@RequestMapping("/login")
+	public ModelAndView login() {
+		ModelAndView model = new ModelAndView("login");
+		return model;
+	}
 }
